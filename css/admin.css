@@ -1,0 +1,224 @@
+body {
+    background-image: url(../media/image/wallpapers/898689.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+    margin:0;
+    font-family: "Balsamiq Sans", cursive;
+    display: flex;
+   
+  }
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #333;
+    background-color: #555;
+    color: #fff;
+  }
+  h1 {
+    margin-top: 0;
+    color: white;
+    text-align: center;
+  }
+  
+  form {
+    margin: auto;
+  }
+  
+  label {
+    display: block;
+    color: white;
+    text-align: center;
+  }
+  input {
+    color: black
+  }
+  button {
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+
+
+
+.Welcome {
+    text-align: center;
+    color: white;
+    text-shadow:1px 1px 10px blue, 1px 1px 10px blue;
+ 
+}
+.Welcome-Description { 
+    text-align: center;
+    color: white;
+  
+}
+.pfp {
+    border-radius: 50%;
+    background-color: transparent;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 9px;
+    right: 17px;
+    font-size: 18px;
+    border: solid;
+    border-width: 2px;
+    border-color: blue;
+    cursor: pointer;
+}
+.pfptext {
+    position: absolute;
+    top: 75px;
+    right: 16px;
+    font-size: 18px;
+}
+
+.pfpimg {
+    border-radius: 50%;
+    background-color: transparent;
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    top:  9px;
+    right: 17px;
+    font-size: 18px;
+}
+
+.CC {
+    position: absolute;
+    top: -1px;
+    right: 8px;
+    transform: translateX(-100%, -100%)
+}
+.clock {
+    color: white;
+    text-shadow:1px 1px 10px blue, 1px 1px 10px blue;
+}
+.year {
+    color: white;
+}
+
+a:hover {
+color: white;
+text-decoration: none;
+}
+a:link {
+ color: white;
+ border: 2px solid blue;
+ background-color: Black;
+}
+a:visited {
+    border: 2px solid blue;
+ background-color: black;
+ color: white;
+}
+a:hover, a:active {
+background-color: blue;
+color: white;
+text-decoration: none;
+}
+
+hr { display: block; height: 1px;
+    border: 0; border-top: 3px solid white;
+    margin: 1em 0; padding: 0;  box-shadow: 0 0 1rem 0 rgb(25, 0, 255); }
+
+.jumbotron { 
+    background-color: lightblue;
+    background-image: url("https://www.bing.com/images/blob?bcid=TnrhRTgF.8kBdg");
+    color: Blue;
+    min-height: 20px;
+    padding: 10px;
+    }
+
+
+    footer {
+      position: bottom;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+    color: white;
+      text-align: center;
+      clear: both;
+    }
+
+ 
+
+    .scroll {
+    color: #fff;
+    margin-top: 100px
+}
+
+#toTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 39px;
+    z-index: 98;
+    padding: 21px;
+    background-color: (#0000FF);
+}
+#admin {
+    position: fixed;
+    bottom: 0.25px;
+    color: white;
+    right: 39px;
+    z-index: 98;
+    
+    
+}
+
+.js .cd-top--fade-out {
+    opacity: .5
+}
+
+.js .cd-top--is-visible {
+    visibility: visible;
+    opacity: 1
+}
+
+.js .cd-top {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s, visibility .3s, background-color .3s
+}
+
+.cd-top {
+    position: fixed;
+    bottom: 20px;
+    bottom: var(--cd-back-to-top-margin);
+    right: 20px;
+    right: var(--cd-back-to-top-margin);
+    display: inline-block;
+    height: 40px;
+    height: var(--cd-back-to-top-size);
+    width: 40px;
+    width: var(--cd-back-to-top-size);
+    box-shadow: 0 0 10px (#0000FF) !important;
+    background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
+    background-color: (#0000FF);
+    background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8)
+}
+
+
