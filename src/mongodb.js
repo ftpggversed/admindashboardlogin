@@ -1,11 +1,11 @@
 const mongoose = require("mongoose")
 
-mongoose.connect("mongodb://localhost:474827/admin")
+mongoose.connect("mongodb://localhost:27017/admin")
 .then(() => {
-    console.log("Mongo Connected On Port 474827")
+    console.log("Mongo Connected On Port 27017")
 })
 .catch(() => {
-    console.log("Failed To Connect Mongo On Port 474827")
+    console.log("Failed To Connect Mongo On Port 27017")
 })
 
 const LogInSchema = new mongoose.Schema({
@@ -20,6 +20,6 @@ const LogInSchema = new mongoose.Schema({
 })
 
 
-const collection = new mongoose.model("Collection1", LogInSchema)
+const collection = new mongoose.model("adminlogin", LogInSchema)
 
 module.exports = collection

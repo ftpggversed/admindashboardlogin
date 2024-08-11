@@ -4,7 +4,7 @@ const path = require("path")
 const hbs = require("hbs")
 const collection = require("./mongodb")
 
-// const templatePath = path.join(__dirname, '../templates')
+const templatePath = path.join(__dirname, '../templates')
 
 app.use(express.json())
 app.set("view engine", "hbs")
@@ -12,32 +12,32 @@ app.set("views", templatePath)
 app.use(express.urlencoded({extended:false}))
 
 app.get("/", (req, res)=>{
-    res.render("login") 
+    res.render("admin") 
 })
 
-app.get("/signup", (req, res)=>{
-    res.render("signup") 
+app.get("/admin", (req, res)=>{
+    res.render("admin") 
 })
 
+// Sign Up Form Records Name and Password
+// app.post("/signup", async(req, res)=> {
 
-app.post("/signup", async(req, res)=> {
+// const data= {
+//     name: req.body.name,
+//     password: req.body.password
+// }
 
-const data= {
-    name: req.body.name,
-    password: req.body.password
-}
+// await collection.insertMany([data])
+// res.render("home")
+// })
 
-await collection.insertMany([data])
-res.render("home")
-})
-
-app.post("/login", async(req, res)=> {
+app.post("/admin", async(req, res)=> {
 
    try {
     const check = await collection.findOne({name: req.body.name})
 
     if (check.password === req.body.password){
-        res.render("home")
+        res.render("dashboard")
     }
     else {
         res.send("Incorrect User or Password")
@@ -50,4 +50,5 @@ app.post("/login", async(req, res)=> {
 
 
 app.listen(3000, ()=> {
-    console.log("Port 3000 Connected")
+    console.log("Port 3000 Connected")
+})
